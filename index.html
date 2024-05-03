@@ -12,6 +12,20 @@
             padding: 0;
             background-color: #0A3D62; /* Deep ocean blue */
             color: #fff; /* White text for better readability */
+            overflow: hidden;
+            position: relative;
+            height: 100vh;
+        }
+        .bubble {
+            position: absolute;
+            bottom: -100px;
+            background-color: rgba(255, 255, 255, 0.6);
+            border-radius: 50%;
+            opacity: 0.5;
+        }
+        @keyframes rise {
+            0% { bottom: -100px; opacity: 0.5; }
+            100% { bottom: 110%; opacity: 0; }
         }
         header {
             background-color: #024E76; /* Dark ocean blue */
@@ -20,11 +34,15 @@
             text-align: center;
             font-size: 2em;
             font-weight: bold;
+            position: relative;
+            z-index: 100;
         }
         nav {
             background-color: #0A3D62; /* Matches the body's ocean theme */
             padding: 10px 0;
             text-align: center;
+            position: relative;
+            z-index: 100;
         }
         nav a {
             color: #76D7C4; /* Seafoam green */
@@ -41,6 +59,8 @@
             background-color: #154360; /* Darker shade of the ocean blue */
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+            position: relative;
+            z-index: 100;
         }
         footer {
             text-align: center;
@@ -50,6 +70,7 @@
             position: relative;
             bottom: 0;
             width: 100%;
+            z-index: 100;
         }
         @media (max-width: 600px) {
             header, nav, footer {
@@ -78,6 +99,25 @@
     <footer>
         © 2024 Undersea Tech Talk. All rights reserved.
     </footer>
+
+    <!-- Adding bubbles for effect -->
+    <script>
+        function createBubbles() {
+            const totalBubbles = 30;
+            for (let i = 0; i < totalBubbles; i++) {
+                let bubble = document.createElement('div');
+                bubble.className = 'bubble';
+                document.body.appendChild(bubble);
+                bubble.style.width = `${Math.random() * 20 + 10}px`;
+                bubble.style.height = bubble.style.width;
+                bubble.style.left = `${Math.random() * 100}%`;
+                bubble.style.animation = `rise ${Math.random() * 8 + 8}s linear infinite`;
+                bubble.style.animationDelay = `${Math.random() * -8}s`;
+            }
+        }
+        window.onload = createBubbles;
+    </script>
 </body>
 </html>
+
 

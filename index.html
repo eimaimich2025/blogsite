@@ -10,8 +10,8 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #F4D03F; /* Sandy color */
-            color: #004d40; /* Dark seaweed green for text */
+            background-color: #0A3D62; /* Deep ocean blue */
+            color: #fff; /* White text for better readability */
             overflow: hidden;
             position: relative;
             height: 100vh;
@@ -56,7 +56,7 @@
         article {
             margin: 20px;
             padding: 20px;
-            background-color: #F0E68C; /* Khaki for a lighter sand look */
+            background-color: #154360; /* Darker shade of the ocean blue */
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.3);
             position: relative;
@@ -71,6 +71,15 @@
             bottom: 0;
             width: 100%;
             z-index: 100;
+        }
+        .sand {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 100px;
+            background: linear-gradient(to top, #f5f5dc 50%, transparent 100%);
+            z-index: 50;
+            border-top: 15px solid #f5f5dc;
         }
         @media (max-width: 600px) {
             header, nav, footer {
@@ -99,6 +108,7 @@
     <footer>
         © 2024 Undersea Tech Talk. All rights reserved.
     </footer>
+    <div class="sand"></div>
 
     <!-- Adding bubbles for effect -->
     <script>

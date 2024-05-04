@@ -3,56 +3,42 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #0A3D62; /* Deep ocean blue */
-    color: #fff; /* White text for better readability */
-    overflow: hidden;
-    position: relative;
+    background-color: #f0faff; /* Light baby blue background */
+    color: #333; /* Dark text for better readability */
     height: 100vh;
 }
-header {
-    background-color: #024E76; /* Dark ocean blue */
-    color: #AED6F1; /* Light ocean blue */
-    padding: 20px 40px;
+header, nav, footer {
     text-align: center;
-    font-size: 2em;
-    font-weight: bold;
-    position: relative;
-    z-index: 100;
-}
-nav {
-    background-color: #0A3D62; /* Matches the body's ocean theme */
-    padding: 10px 0;
-    text-align: center;
-    position: relative;
-    z-index: 100;
+    padding: 1rem;
+    background-color: #fff; /* White background */
+    color: #333;
 }
 nav a {
-    color: #76D7C4; /* Seafoam green */
-    padding: 10px 20px;
+    margin: 0 10px;
     text-decoration: none;
-    font-size: 1.2em;
+    color: #333;
+    padding: 10px 20px;
 }
 nav a:hover {
     background-color: #0288D1; /* Bright ocean blue */
 }
 article {
-    margin: 20px;
+    width: 60%; /* Limits the width of the article and centers it */
+    background-color: #fff; /* White background for the article */
     padding: 20px;
-    background-color: #154360; /* Darker shade of the ocean blue */
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-    position: relative;
-    z-index: 100;
+    margin: 20px auto; /* Centers the article on the page */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adds a subtle shadow around the article */
+    border-radius: 8px; /* Rounded corners for the article */
 }
 footer {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #024E76; /* Dark ocean blue */
-    color: #AED6F1; /* Light ocean blue */
-    position: relative;
+    font-size: 0.8em;
+    color: #666;
+    background-color: #eee;
+    padding: 1rem;
+    position: fixed;
+    left: 0;
     bottom: 0;
     width: 100%;
-    z-index: 100;
 }
 
 /* Form Styles */
@@ -60,7 +46,7 @@ form {
     max-width: 500px;
     margin: auto;
     padding: 20px;
-    background-color: #123850; /* Slightly lighter shade for form background */
+    background-color: #fff; /* White background */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.5);
 }
@@ -88,7 +74,6 @@ button {
     color: white;
     font-weight: bold;
     cursor: pointer;
-    border: 1px solid #0277BD; /* Slightly darker blue for border */
 }
 button:hover {
     background-color: #0277BD; /* Darker blue for hover effect */
@@ -96,10 +81,9 @@ button:hover {
 
 /* Responsive Styles */
 @media (max-width: 600px) {
-    header, nav, footer {
+    header, nav, footer, article {
+        padding: 10px;
         text-align: center;
     }
-    form {
-        padding: 10px;
-    }
 }
+

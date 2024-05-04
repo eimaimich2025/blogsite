@@ -1,23 +1,26 @@
 /* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Century', 'Century Gothic', sans-serif; /* Changes the font to Century with fallbacks */
     margin: 0;
     padding: 0;
     background-color: #f0faff; /* Light baby blue background */
     color: #333; /* Dark text for better readability */
     height: 100vh;
+    font-size: 18px; /* Standard text size */
 }
 header, nav, footer {
     text-align: center;
     padding: 1rem;
     background-color: #fff; /* White background */
     color: #333;
+    font-family: 'Century', 'Century Gothic', sans-serif; /* Consistent font for header, nav, and footer */
 }
 nav a {
     margin: 0 10px;
     text-decoration: none;
     color: #333;
     padding: 10px 20px;
+    font-size: 1.2em;
 }
 nav a:hover {
     background-color: #0288D1; /* Bright ocean blue */
@@ -29,6 +32,7 @@ article {
     margin: 20px auto; /* Centers the article on the page */
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adds a subtle shadow around the article */
     border-radius: 8px; /* Rounded corners for the article */
+    font-family: 'Century', 'Century Gothic', sans-serif; /* Ensuring article text is also Century */
 }
 footer {
     font-size: 0.8em;
@@ -39,6 +43,7 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
+    font-family: 'Century', 'Century Gothic', sans-serif; /* Consistent font for footer */
 }
 
 /* Form Styles */
@@ -49,6 +54,7 @@ form {
     background-color: #fff; /* White background */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    font-family: 'Century', 'Century Gothic', sans-serif; /* Century font for forms */
 }
 .form-group {
     margin-bottom: 20px;
@@ -56,6 +62,7 @@ form {
 label {
     display: block;
     margin-bottom: 5px;
+    font-family: 'Century', 'Century Gothic', sans-serif; /* Century font for labels */
 }
 input[type="text"],
 button {
@@ -64,6 +71,7 @@ button {
     border: none;
     border-radius: 5px;
     font-size: 16px;
+    font-family: 'Century', 'Century Gothic', sans-serif; /* Century font for input and button */
 }
 input[type="text"] {
     background-color: #e0e0e0;
@@ -86,4 +94,5 @@ button:hover {
         text-align: center;
     }
 }
+
 

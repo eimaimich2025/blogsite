@@ -1,17 +1,17 @@
 /* General Styles */
 body {
-    font-family: 'Century', 'Century Gothic', sans-serif; /* Changes the font to Century with fallbacks */
-    font-size: 18px; /* Increases the font size */
+    font-family: 'Century', 'Century Gothic', sans-serif;
+    font-size: 18px;
     margin: 0;
     padding: 0;
-    color: #333; /* Dark text for better readability */
-    background-color: #f0faff; /* Light baby blue background */
+    color: #333;
+    background-color: #f0faff;
 }
 
 header, nav, footer {
     text-align: center;
     padding: 1rem;
-    background-color: #fff; /* White background */
+    background-color: #fff;
 }
 
 nav a {
@@ -21,17 +21,17 @@ nav a {
 }
 
 article {
-    width: 60%; /* Limits the width of the article and centers it */
-    background-color: #fff; /* White background for the article */
+    width: 60%;
+    background-color: #fff;
     padding: 20px;
-    margin: 20px auto; /* Centers the article on the page */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adds a subtle shadow around the article */
-    border-radius: 8px; /* Rounded corners for the article */
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
 }
 
 article p {
-    letter-spacing: 0.05em; /* Adds more space between characters */
-    line-height: 1.6; /* Increases the line height for better readability */
+    letter-spacing: 0.05em;
+    line-height: 1.6;
 }
 
 footer {
@@ -43,6 +43,43 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
+}
+
+/* Media query for tablets and desktops */
+@media (min-width: 768px) {
+    article {
+        max-width: 800px; /* Caps the article width on larger screens */
+    }
+
+    body {
+        font-size: 16px; /* Adjusts the base font size for readability */
+    }
+}
+
+/* Media query for phones */
+@media (max-width: 767px) {
+    body {
+        font-size: 14px; /* Smaller font size for mobile devices */
+    }
+
+    header, nav, footer {
+        padding: 0.5rem; /* Reduces padding on smaller screens */
+    }
+
+    article {
+        width: 95%; /* Increases article width to use more of the screen */
+        padding: 10px; /* Reduces padding to fit smaller screens */
+        margin: 10px auto; /* Reduces margin */
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Lighter shadow */
+    }
+
+    nav a {
+        margin: 0 5px; /* Reduces margin between navigation links */
+    }
+
+    footer {
+        font-size: 0.7em; /* Smaller footer font on mobile */
+    }
 }
 
 

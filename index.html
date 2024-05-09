@@ -8,11 +8,13 @@
 </head>
 <body>
     <header>
+        <div class="hamburger" onclick="toggleBanner()">☰</div>
         Undersea Tech Talk
     </header>
     <nav>
-        <a href="#home">Home</a>
-        <div class="dropdown">
+        <div class="side-banner" id="mySideBanner">
+            <a href="javascript:void(0)" class="close-btn" onclick="closeBanner()">&times;</a>
+            <a href="#home">Home</a>
             <a href="javascript:void(0);" class="dropbtn">Articles</a>
             <div class="dropdown-content">
                 <a href="article1.html">AI in Healthcare</a>
@@ -20,9 +22,8 @@
                 <a href="article3.html">Innovations in Submarine Technology</a>
                 <!-- Add more article links as needed -->
             </div>
-        <a href="second_page.html">Payment</a>
-        <a href="tictactoe.html">Games</a>
-        
+            <a href="second_page.html">Payment</a>
+            <a href="tictactoe.html">Games</a>
         </div>
     </nav>
     <article>
@@ -32,6 +33,20 @@
     <footer>
         © 2024 Undersea Tech Talk. All rights reserved.
     </footer>
+    <script>
+        function toggleBanner() {
+            var banner = document.getElementById("mySideBanner");
+            if (banner.style.width === '250px') {
+                banner.style.width = '0';
+            } else {
+                banner.style.width = '250px';
+            }
+        }
+
+        function closeBanner() {
+            document.getElementById("mySideBanner").style.width = "0";
+        }
+    </script>
 </body>
 </html>
 

@@ -19,6 +19,7 @@ nav a {
     text-decoration: none;
     color: #333;
 }
+
 /* Dropdown Styles */
 .dropdown {
     position: relative;
@@ -28,10 +29,12 @@ nav a {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #fff; /* Changed to white */
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    overflow: auto; /* Prevents the menu from expanding past the screen */
+    max-height: 80vh; /* Limits the height of the dropdown */
 }
 
 .dropdown-content a {
@@ -48,7 +51,7 @@ nav a {
 }
 
 .dropdown:hover a {
-    background-color: #ddd;
+    background-color: transparent; /* Keeps background transparent until hovered */
 }
 
 article {
@@ -79,38 +82,39 @@ footer {
 /* Media query for tablets and desktops */
 @media (min-width: 768px) {
     article {
-        max-width: 800px; /* Caps the article width on larger screens */
+        max-width: 800px;
     }
 
     body {
-        font-size: 16px; /* Adjusts the base font size for readability */
+        font-size: 16px;
     }
 }
 
 /* Media query for phones */
 @media (max-width: 767px) {
     body {
-        font-size: 14px; /* Smaller font size for mobile devices */
+        font-size: 14px;
     }
 
     header, nav, footer {
-        padding: 0.5rem; /* Reduces padding on smaller screens */
+        padding: 0.5rem;
     }
 
     article {
-        width: 95%; /* Increases article width to use more of the screen */
-        padding: 10px; /* Reduces padding to fit smaller screens */
-        margin: 10px auto; /* Reduces margin */
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Lighter shadow */
+        width: 95%;
+        padding: 10px;
+        margin: 10px auto;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
 
     nav a {
-        margin: 0 5px; /* Reduces margin between navigation links */
+        margin: 0 5px;
     }
 
     footer {
-        font-size: 0.7em; /* Smaller footer font on mobile */
+        font-size: 0.7em;
     }
 }
+
 
 

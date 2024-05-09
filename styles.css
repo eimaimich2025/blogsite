@@ -12,7 +12,7 @@ header {
     text-align: center;
     padding: 1rem;
     background-color: #fff;
-    position: relative; /* Needed to position the hamburger absolutely within the header */
+    position: relative; /* Needed to position the hamburger and logo absolutely within the header */
 }
 
 nav a {
@@ -23,12 +23,22 @@ nav a {
 
 /* Hamburger Menu */
 .hamburger {
-    display: none; /* Hidden by default */
+    display: block; /* Always visible */
     cursor: pointer;
     font-size: 30px;
     position: absolute;
-    right: 10px;
+    right: 10px; /* Positioned to the right */
     top: 10px;
+}
+
+/* Home Logo */
+.home-logo {
+    position: absolute;
+    left: 10px; /* Positioned to the left */
+    top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 /* Side Banner */
@@ -68,13 +78,6 @@ nav a {
     cursor: pointer;
 }
 
-/* Media query for phones */
-@media (max-width: 767px) {
-    .hamburger {
-        display: block; /* Show hamburger in mobile view */
-    }
-}
-
 footer {
     font-size: 0.8em;
     color: #666;
@@ -84,8 +87,6 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-}
-
 }
 
 

@@ -20,6 +20,13 @@ nav a {
     color: #333;
 }
 
+/* Hamburger Menu */
+.hamburger {
+    display: none; /* Hidden by default, shown in mobile view */
+    cursor: pointer;
+    font-size: 30px;
+}
+
 /* Dropdown Styles */
 .dropdown {
     position: relative;
@@ -29,12 +36,12 @@ nav a {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #fff; /* Changed to white */
+    background-color: #fff;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    overflow: auto; /* Prevents the menu from expanding past the screen */
-    max-height: 80vh; /* Limits the height of the dropdown */
+    overflow: auto;
+    max-height: 80vh;
 }
 
 .dropdown-content a {
@@ -51,7 +58,44 @@ nav a {
 }
 
 .dropdown:hover a {
-    background-color: transparent; /* Keeps background transparent until hovered */
+    background-color: transparent;
+}
+
+/* Side Banner */
+.side-banner {
+    height: 100vh;
+    width: 0; /* width zero initially */
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.5s; /* Smooth transition */
+    padding-top: 60px; /* Space from top */
+}
+
+.side-banner a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #333;
+    display: block;
+    transition: 0.3s;
+}
+
+.side-banner a:hover {
+    color: #f1f1f1;
+    background-color: #0056ff;
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
 }
 
 article {
@@ -113,6 +157,10 @@ footer {
 
     footer {
         font-size: 0.7em;
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger in mobile view */
     }
 }
 

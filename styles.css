@@ -12,26 +12,24 @@ header {
     text-align: center;
     padding: 1rem;
     background-color: #fff;
-    position: relative; /* Ensures positioning of the hamburger menu */
+    position: relative;
 }
 
 nav a {
-    margin: 0 10px;
+    margin: 10px;
     text-decoration: none;
     color: #333;
 }
 
-/* Hamburger Menu - now visible on all screen sizes */
 .hamburger {
-    display: block; /* Always visible */
+    display: block;
     cursor: pointer;
     font-size: 30px;
     position: absolute;
-    right: 20px; /* Positioned on the far right */
-    top: 10px; /* Aligned vertically */
-    color: #000; /* Ensure visibility against light background */
+    right: 20px;
+    top: 10px;
+    color: #000;
 }
-
 
 footer {
     font-size: 0.8em;
@@ -44,83 +42,50 @@ footer {
     width: 100%;
 }
 
-/* Media query for tablets and desktops */
 @media (min-width: 768px) {
-    article {
-    width: 80%; /* Adjusted width for better readability */
-    margin: 20px auto; /* Center the article horizontally and add some space above and below */
-    padding: 20px; /* Add padding inside the box */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow around the article */
-    border: 1px solid #ccc; /* Slight border around the article */
-    background-color: #fff; /* White background to stand out against the main body background */
-    text-align: left; /* Align text to the left inside the article */
-    font-size: 22px; /* Larger text size for the article */
-    line-height: 1.6; /* Increase the space between lines */
-    box-sizing: border-box; /* Include padding and border in the width calculation */
-}
-
-
     body {
         font-size: 16px;
     }
+    article {
+        width: 80%;
+        margin: 20px auto;
+        padding: 20px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        border: 1px solid #ccc;
+        background-color: #fff;
+        text-align: left;
+        font-size: 22px;
+        line-height: 1.6;
+    }
 }
 
-/* Media query for phones */
 @media (max-width: 767px) {
     body {
         font-size: 14px;
     }
     article {
-        width: 95%; /* More width on smaller screens */
-        padding: 20px; /* Reduced padding */
-        font-size: 18px; /* Smaller font size for smaller screens */
+        width: 95%;
+        padding: 10px;
+        font-size: 18px;
     }
-
     header, nav, footer {
         padding: 0.5rem;
     }
 }
 
-   
-
-
-    nav a {
-        margin: 0 5px;
-    }
-
-    footer {
-        font-size: 0.7em;
-    }
-}
-
-article {
-    width: 80%; /* Adjusted width for better readability */
-    margin: 20px auto; /* Center the article horizontally and add some space above and below */
-    padding: 20px; /* Add padding inside the box */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow around the article */
-    border: 1px solid #ccc; /* Slight border around the article */
-    background-color: #fff; /* White background to stand out against the main body background */
-    text-align: center; /* Align text to the left inside the article */
-    font-size: 22px; /* Larger text size for the article */
-    line-height: 1.6; /* Increase the space between lines */
-}
-
-
-
-/* Side Banner Styles - Added for the right-hand banner */
+/* Side Banner Styles */
 .side-banner {
-    height: 100%; /* Full height */
-    width: 0; /* Width is zero initially */
-    position: fixed; /* Fixed position */
-    z-index: 1; /* Make sure it sits on top */
-    top: 0; /* Start from the top */
-    right: 0; /* Align to the right side */
-    background-color: #111; /* Dark background for the banner */
-    overflow-x: hidden; /* No horizontal scroll */
-    transition: 0.5s; /* Smooth transition for opening and closing */
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
 }
 
-/* Link styling inside the banner */
 .side-banner a {
     padding: 10px 15px;
     text-decoration: none;
@@ -130,7 +95,6 @@ article {
     transition: 0.3s;
 }
 
-/* Close button */
 .close-btn {
     position: absolute;
     top: 0;

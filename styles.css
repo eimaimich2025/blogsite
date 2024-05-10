@@ -7,6 +7,9 @@ body {
     color: #333;
     background-color: #f0faff;
 }
+.hidden {
+    display: none !important;  /* Use !important to ensure override */
+}
 
 header {
     text-align: center;

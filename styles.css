@@ -80,8 +80,16 @@ footer {
 /* Media query for tablets and desktops */
 @media (min-width: 768px) {
     article {
-        max-width: 800px;
-    }
+    width: 80%; /* Adjusted width for better readability */
+    margin: 20px auto; /* Center the article horizontally and add some space above and below */
+    padding: 20px; /* Add padding inside the box */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow around the article */
+    border: 1px solid #ccc; /* Slight border around the article */
+    background-color: #fff; /* White background to stand out against the main body background */
+    text-align: center; /* Center the text inside the article */
+    font-size: 22px; /* Larger text size for the article */
+    box-sizing: border-box; /* Include padding and border in the width calculation */
+}
 
     body {
         font-size: 16px;
@@ -104,17 +112,7 @@ footer {
     }
 }
 
-   article {
-    width: 80%; /* Adjusted width for better readability */
-    margin: 20px auto; /* Center the article horizontally and add some space above and below */
-    padding: 20px; /* Add padding inside the box */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow around the article */
-    border: 1px solid #ccc; /* Slight border around the article */
-    background-color: #fff; /* White background to stand out against the main body background */
-    text-align: center; /* Center the text inside the article */
-    font-size: 22px; /* Larger text size for the article */
-    box-sizing: border-box; /* Include padding and border in the width calculation */
-}
+   
 
 
     nav a {

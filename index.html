@@ -35,19 +35,31 @@
         © 2024 Undersea Tech Talk. All rights reserved.
     </footer>
     <script>
-        function toggleBanner() {
-            var banner = document.getElementById("mySideBanner");
-            if (banner.style.width === '250px') {
-                banner.style.width = '0';
-            } else {
-                banner.style.width = '250px';
-            }
-        }
+    function toggleBanner() {
+        var banner = document.getElementById("mySideBanner");
+        var dropdowns = document.querySelectorAll('.dropdown-content');
 
-        function closeBanner() {
-            document.getElementById("mySideBanner").style.width = "0";
+        if (banner.style.width === '250px') {
+            banner.style.width = '0';
+            // Optionally re-enable dropdowns when side banner is closed
+            dropdowns.forEach(function(dropdown) {
+                dropdown.style.display = 'none'; // This hides dropdowns when closing the banner
+            });
+        } else {
+            banner.style.width = '250px';
+            // Hide all dropdowns when side banner is open
+            dropdowns.forEach(function(dropdown) {
+                dropdown.style.display = 'none';
+            });
         }
-    </script>
+    }
+
+    function closeBanner() {
+        document.getElementById("mySideBanner").style.width = "0";
+        // You could add logic here to manage dropdown visibility when closing the banner explicitly
+    }
+</script>
+
 </body>
 </html>
 

@@ -8,10 +8,10 @@
 </head>
 <body>
     <header>
-    <div class="hamburger" onclick="toggleBanner()">☰</div>
-    <a href="index.html" class="home-logo">Eric</a>
-    Undersea Tech Talk
-</header>
+        <div class="hamburger" onclick="toggleBanner()">☰</div>
+        <a href="index.html" class="home-logo">Eric</a>
+        Undersea Tech Talk
+    </header>
     <nav>
         <div class="side-banner" id="mySideBanner">
             <a href="javascript:void(0)" class="close-btn" onclick="closeBanner()">&times;</a>
@@ -22,8 +22,8 @@
         </div>
     </nav>
     <article>
-        <h2>Welcome to Undersea Talk Blog</h2>
-        <p>Hello dear reader. You have graciously taken your precious time and energy on planet earth to direct your attention to the words I have written. For that, you have done me an eternal kindness and I hope to reward you for that kindness with whatever wisdom I have gained from my time on this earth. This is a multi-page blog outlining history, my life philosophy, moral principles, ponderances and theories and a concrete vision for the future that I would like to build and how I plan to build it. In this document, there are business ideas, stories, and predictions for what the future holds for humanity. I hope you enjoy reading it.</p>
+        <h2>Welcome to Undersea Tech Talk Blog</h2>
+        <p>Hello dear reader. This blog outlines history, my life philosophy, moral principles, and a vision for the future. Enjoy reading about business ideas, stories, and predictions for what the future holds for humanity.</p>
     </article>
     <footer>
         © 2024 Undersea Tech Talk. All rights reserved.
@@ -31,31 +31,17 @@
     <script>
     function toggleBanner() {
         var banner = document.getElementById("mySideBanner");
-        var dropdowns = document.querySelectorAll('.dropdown-content');
-
         if (banner.style.width === '250px') {
             banner.style.width = '0';
-            // Optionally re-enable dropdowns when side banner is closed
-            dropdowns.forEach(function(dropdown) {
-                dropdown.style.display = 'none'; // This hides dropdowns when closing the banner
-            });
         } else {
             banner.style.width = '250px';
-            // Hide all dropdowns when side banner is open
-            dropdowns.forEach(function(dropdown) {
-                dropdown.style.display = 'none';
-            });
         }
     }
 
     function closeBanner() {
-        document.getElementById("mySideBanner").style.width = "0";
-        // You could add logic here to manage dropdown visibility when closing the banner explicitly
+        document.getElementById("mySideBanner").style.width = '0';
     }
-</script>
-
+    </script>
 </body>
 </html>
-
-
 

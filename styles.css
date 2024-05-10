@@ -53,10 +53,12 @@ footer {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow around the article */
     border: 1px solid #ccc; /* Slight border around the article */
     background-color: #fff; /* White background to stand out against the main body background */
-    text-align: center; /* Center the text inside the article */
+    text-align: left; /* Align text to the left inside the article */
     font-size: 22px; /* Larger text size for the article */
+    line-height: 1.6; /* Increase the space between lines */
     box-sizing: border-box; /* Include padding and border in the width calculation */
 }
+
 
     body {
         font-size: 16px;
@@ -98,10 +100,11 @@ article {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow around the article */
     border: 1px solid #ccc; /* Slight border around the article */
     background-color: #fff; /* White background to stand out against the main body background */
-    text-align: center; /* Center the text inside the article */
+    text-align: center; /* Align text to the left inside the article */
     font-size: 22px; /* Larger text size for the article */
-    box-sizing: border-box; /* Include padding and border in the width calculation */
+    line-height: 1.6; /* Increase the space between lines */
 }
+
 
 
 /* Side Banner Styles - Added for the right-hand banner */

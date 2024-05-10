@@ -55,10 +55,14 @@ Despite these advancements, the integration of AI into healthcare does not come 
         © 2024 Undersea Tech Talk. All rights reserved.
     </footer>
     <script>
-        function toggleNav() {
-    var nav = document.getElementById('mainNav');
-    nav.classList.toggle('hidden');  // This toggles the 'hidden' class
-}
+
+        function toggleBanner() {
+        var banner = document.getElementById("mainNav");
+        if (banner.style.width === '250px') {
+            banner.style.width = '0';
+        } else {
+            banner.style.width = '250px';
+        }
         }
     </script>
 </body>

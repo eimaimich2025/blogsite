@@ -56,12 +56,9 @@ Despite these advancements, the integration of AI into healthcare does not come 
     </footer>
     <script>
         function toggleNav() {
-            var nav = document.getElementById('mainNav');
-            if (nav.style.display === 'none') {
-                nav.style.display = 'block';
-            } else {
-                nav.style.display = 'none';
-            }
+    var nav = document.getElementById('mainNav');
+    nav.classList.toggle('hidden');  // This toggles the 'hidden' class
+}
         }
     </script>
 </body>

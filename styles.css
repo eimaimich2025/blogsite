@@ -114,5 +114,38 @@ footer {
     }
 }
 
+/* Side Banner Styles - Added for the right-hand banner */
+.side-banner {
+    height: 100%; /* Full height */
+    width: 0; /* Width is zero initially */
+    position: fixed; /* Fixed position */
+    z-index: 1; /* Make sure it sits on top */
+    top: 0; /* Start from the top */
+    right: 0; /* Align to the right side */
+    background-color: #111; /* Dark background for the banner */
+    overflow-x: hidden; /* No horizontal scroll */
+    transition: 0.5s; /* Smooth transition for opening and closing */
+}
+
+/* Link styling inside the banner */
+.side-banner a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+/* Close button */
+.close-btn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
 
 

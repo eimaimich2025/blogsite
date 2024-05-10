@@ -8,9 +8,10 @@
 </head>
 <body>
     <header>
+        <div class="hamburger" onclick="toggleNav()">☰</div>
         Undersea Tech Talk - AI in Healthcare
     </header>
-    <nav>
+    <nav id="mainNav" style="display: none;"> <!-- Initially hidden -->
         <a href="index.html">Home</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
@@ -53,8 +54,20 @@ Despite these advancements, the integration of AI into healthcare does not come 
     <footer>
         © 2024 Undersea Tech Talk. All rights reserved.
     </footer>
+    <script>
+        function toggleNav() {
+            var nav = document.getElementById('mainNav');
+            if (nav.style.display === 'none') {
+                nav.style.display = 'block';
+            } else {
+                nav.style.display = 'none';
+            }
+        }
+    </script>
 </body>
 </html>
+
+        
 
 
 

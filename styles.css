@@ -97,7 +97,6 @@ footer {
     transition: 0.5s;
     overflow: hidden;
     overflow-y: hidden;
-    transition: width 0.5s ease, opacity 0.5s ease;
     opacity: 0; /* Start as closed and transparent */
     width: 0; /* Start as closed */
     /* Other styles for positioning, background, etc. */

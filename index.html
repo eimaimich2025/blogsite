@@ -13,8 +13,8 @@
         Undersea Tech Talk
     </header>
     <nav>
-        <div class="side-banner" id="mySideBanner">
-            <a href="javascript:void(0)" class="close-btn" onclick="closeBanner()">&times;</a>
+        <div class="side-banner" id="mySideBanner"> <!-- Ensure the ID is correct and used in the JavaScript -->
+            <a href="javascript:void(0)" class="close-btn" onclick="closeBanner()">&times;</a> <!-- Close Button -->
             <a href="#home">Home</a>
             <a href="article1.html">AI in Healthcare</a>
             <a href="second_page.html">Payment</a>
@@ -31,15 +31,12 @@
     <script>
     function toggleBanner() {
         var banner = document.getElementById("mySideBanner");
-        if (banner.style.width === '250px') {
-            banner.style.width = '0';
-        } else {
-            banner.style.width = '250px';
-        }
+        banner.classList.toggle('open'); // Toggle the 'open' class to show/hide the sidebar
     }
 
     function closeBanner() {
-        document.getElementById("mySideBanner").style.width = '0';
+        var banner = document.getElementById("mySideBanner");
+        banner.classList.remove('open'); // Remove the 'open' class to ensure the sidebar is hidden
     }
     </script>
 </body>

@@ -6,9 +6,6 @@
     <title>Undersea Tech Talk - AI in Healthcare</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-window.onload = function() {
-    document.getElementById("mainNav").style.width = '0';
-};
 <body>
     <header>
         <div class="hamburger" onclick="toggleBanner()">☰</div>
@@ -32,6 +29,9 @@ window.onload = function() {
     </footer>
     <script>
         function toggleBanner() {
+            window.onload = function() {
+            document.getElementById("mainNav").style.width = '0';
+            };
             var nav = document.getElementById("mainNav");
             if (nav.style.width === '250px') {
                 nav.style.width = '0'; // Hide the banner by setting width to 0

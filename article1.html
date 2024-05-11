@@ -15,7 +15,7 @@
         <a href="javascript:void(0)" class="close-btn" onclick="toggleBanner()">&times;</a> <!-- Close Button -->
         <a href="index.html">Home</a>
         <a href="second_page.html">Payment</a>
-        <a href="article1.html"> AI in Healthcare</a>
+        <a href="article1.html">AI in Healthcare</a>
         <a href="tictactoe.html">Tic Tac Toe</a>
     </nav>
     <main>
@@ -31,14 +31,15 @@
         function toggleBanner() {
             var nav = document.getElementById("mainNav");
             if (nav.style.width === '250px') {
-                nav.style.width = '-100';
+                nav.style.width = '0'; // Hide the banner by setting width to 0
             } else {
-                nav.style.width = '250px';
+                nav.style.width = '250px'; // Show the banner by setting width to 250px
             }
         }
     </script>
 </body>
 </html>
+
 
 
 

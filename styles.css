@@ -82,7 +82,7 @@ footer {
         padding: 1rem;
     }
     .hamburger {
-        top: 10px; /* Adjust position to better fit within the mobile header */
+        top: 5px; /* Adjust position to better fit within the mobile header */
     }
 }
 
@@ -93,7 +93,7 @@ footer {
     position: fixed;
     z-index: 1000;
     top: 0;
-    right: 0;
+    right: -1000;
     background-color: #111;
     overflow-x: hidden;
     transition: 0.5s;

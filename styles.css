@@ -87,18 +87,16 @@ footer {
 /* Side Banner Styles */
 .side-banner {
     height: 100%;
-    width: 250px; /* Set a static width for the sidebar */
+    width: 0;
     position: fixed;
     z-index: 1000;
     top: 0;
-    right: -250px; /* Start completely off-screen */
+    right: 0;
     background-color: #111;
-    overflow: hidden; /* Ensure no content spills out */
-    transition: right 0.5s ease; /* Smooth transition for sliding in */
-}
-
-.side-banner.open {
-    right: 0; /* Slide into view */
+    overflow-x: hidden;
+    transition: 0.5s;
+    overflow: hidden;
+    overflow-y: hidden;
 }
 
 .side-banner a {
@@ -107,7 +105,7 @@ footer {
     font-size: 25px;
     color: white;
     display: block;
-    transition: color 0.3s ease; /* Smooth transition for color change */
+    transition: 0.3s;
 }
 
 .close-btn {
@@ -117,8 +115,5 @@ footer {
     font-size: 36px;
     margin-left: 50px;
 }
-
-
-
 
 

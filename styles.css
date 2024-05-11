@@ -1,3 +1,4 @@
+@@ -1,88 +1,88 @@
 /* General Styles */
 body {
     font-family: 'Century', 'Century Gothic', sans-serif;
@@ -7,24 +8,20 @@ body {
     color: #333;
     background-color: #f0faff;
 }
-
 .hidden {
     display: none !important;  /* Use !important to ensure override */
 }
-
 header {
     text-align: center;
     padding: 1rem;
     background-color: #fff;
     position: relative;
 }
-
 nav a {
     margin: 10px;
     text-decoration: none;
     color: #333;
 }
-
 .hamburger {
     display: block;
     cursor: pointer;
@@ -34,7 +31,6 @@ nav a {
     top: 10px;
     color: #000;
 }
-
 footer {
     font-size: 0.8em;
     color: #666;
@@ -45,7 +41,6 @@ footer {
     bottom: 0;
     width: 100%;
 }
-
 @media (min-width: 768px) {
     body {
         font-size: 16px;
@@ -68,7 +63,6 @@ footer {
         position: relative;
     }
 }
-
 @media (max-width: 767px) {
     body {
         font-size: 14px;
@@ -82,7 +76,8 @@ footer {
         padding: 1rem;
     }
     .hamburger {
-        top: 5px; /* Adjust position to better fit within the mobile header */
+        top: 15px; /* Adjust position to better fit within the mobile header */
+        top: 10px; /* Adjust position to better fit within the mobile header */
     }
 }
 
@@ -93,12 +88,11 @@ footer {
     position: fixed;
     z-index: 1000;
     top: 0;
-    right: -1000;
+    right: 0;
     background-color: #111;
     overflow-x: hidden;
     transition: 0.5s;
 }
-
 .side-banner a {
     padding: 10px 15px;
     text-decoration: none;
@@ -107,7 +101,6 @@ footer {
     display: block;
     transition: 0.3s;
 }
-
 .close-btn {
     position: absolute;
     top: 0;

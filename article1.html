@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Undersea Tech Talk - AI in Healthcare</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="hamburger" onclick="toggleNav()">☰</div>
+        <div class="hamburger" onclick="toggleBanner()">☰</div>
         Undersea Tech Talk - AI in Healthcare
     </header>
-    <nav id="mainNav" style="display: none;"> <!-- Initially hidden -->
+    <nav id="mainNav" style="width: 0; overflow: hidden; position: fixed; top: 0; right: 0; height: 100%; background-color: #111; transition: width 0.5s;">
+        <a href="javascript:void(0)" class="close-btn" onclick="toggleBanner()">&times;</a> <!-- Close Button -->
         <a href="index.html">Home</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
@@ -22,53 +23,23 @@
         <article>
             <h2>How AI is Transforming Healthcare</h2>
             <p>Posted on <time datetime="2024-05-04">May 4, 2024</time> by Eric Imai</p>
-            <p>Artificial Intelligence (AI) is becoming a transformative force in the healthcare industry, offering new possibilities and enhancements that were once thought impossible. This technology is not only reshaping the way healthcare providers diagnose and treat diseases but also how they interact with and manage patient care.
-
-<p>Improving Diagnostics with AI
-
-The implementation of AI in diagnostics is profoundly improving accuracy and speed. Advanced algorithms can analyze complex medical data much faster than human practitioners, reducing diagnostic errors and providing more precise treatment recommendations. For instance, AI-powered imaging tools are used to detect anomalies in X-rays and MRIs with greater accuracy than ever before. These tools can identify subtle patterns that might be missed by the human eye, leading to early detection of conditions like cancer, heart disease, and more.
-
-<p>Personalizing Treatment Plans
-
-AI's ability to sift through vast amounts of data also allows for more personalized medicine. By considering a patient’s genetic makeup, lifestyle, and past medical history, AI systems can recommend treatment plans that are uniquely tailored to each individual. This customization is particularly significant in fields like oncology, where precision medicine can dictate the success of chemotherapy and other treatments.
-
-<p>Enhancing Patient Care
-
-Beyond diagnostics and treatment, AI is enhancing patient care through automation and predictive analytics. AI-driven systems can monitor patient vitals and predict acute events, such as strokes or heart attacks, before they happen. This predictive capability enables healthcare providers to intervene more proactively, potentially saving lives. Moreover, AI is automating routine tasks such as scheduling, billing, and patient follow-up, which frees up healthcare professionals to focus more on patient care than administrative duties.
-
-<p>Robotic Surgeries
-
-One of the more futuristic applications of AI in healthcare is in the field of robotic surgery. These AI-enhanced robotic systems provide surgeons with unprecedented precision in complex procedures, improving patient outcomes and reducing recovery times. The robots can perform surgeries with minimal incisions, which is less invasive than traditional methods, leading to quicker healing and less pain for patients.
-
-<p>Future Possibilities
-
-Looking ahead, the potential applications of AI in healthcare are vast. AI is expected to play a crucial role in genetic research, where it could help decode the human genome more efficiently, leading to breakthroughs in genetic diseases. Furthermore, AI is being developed to manage entire health systems, from logistics and supply chain to patient care management, aiming to optimize efficiency and reduce costs while improving patient outcomes.
-
-<p>Challenges and Ethical Considerations
-
-Despite these advancements, the integration of AI into healthcare does not come without challenges. Issues such as data privacy, security, and ethical concerns about machine decision-making in critical care scenarios need to be addressed. Moreover, there is an ongoing debate about the potential impact of AI on the employment of healthcare professionals and the necessary changes in medical training and protocols.
-
-<p>In conclusion, AI is undoubtedly shaping a new era in healthcare, offering exciting opportunities to enhance patient care, improve diagnostic accuracy, and personalize treatment plans. As this technology continues to evolve, it promises to unlock further innovations that could redefine medical practices worldwide. However, it is imperative that as we embrace these advancements, we also consider the ethical implications and strive to develop AI in a way that benefits all aspects of society.</p>
         </article>
     </main>
     <footer>
         © 2024 Undersea Tech Talk. All rights reserved.
     </footer>
     <script>
-
         function toggleBanner() {
-        var banner = document.getElementById("mainNav");
-        if (banner.style.width === '250px') {
-            banner.style.width = '0';
-        } else {
-            banner.style.width = '250px';
-        }
+            var banner = document.getElementById("mainNav");
+            if (banner.style.width === '250px') {
+                banner.style.width = '0';
+            } else {
+                banner.style.width = '250px';
+            }
         }
     </script>
 </body>
 </html>
-
-        
 
 
 

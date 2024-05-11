@@ -11,7 +11,7 @@
         <div class="hamburger" onclick="toggleBanner()">☰</div>
         Undersea Tech Talk - AI in Healthcare
     </header>
-    <nav id="mainNav">
+    <nav class="side-banner" id="mainNav">
         <a href="javascript:void(0)" class="close-btn" onclick="toggleBanner()">&times;</a> <!-- Close Button -->
         <a href="index.html">Home</a>
         <a href="#about">About</a>
@@ -30,16 +30,17 @@
     </footer>
     <script>
         function toggleBanner() {
-            var banner = document.getElementById("mainNav");
-            if (banner.style.width === '250px') {
-                banner.style.width = '0';
+            var nav = document.getElementById("mainNav");
+            if (nav.style.width === '250px') {
+                nav.style.width = '0';
             } else {
-                banner.style.width = '250px';
+                nav.style.width = '250px';
             }
         }
     </script>
 </body>
 </html>
+
 
 
 

@@ -28,21 +28,25 @@
         © 2024 Undersea Tech Talk. All rights reserved.
     </footer>
     <script>
+        window.onload = function() {
+            var nav = document.getElementById("mainNav");
+            nav.style.width = '0'; // Ensure it starts closed
+            nav.style.opacity = '0'; // Ensure it starts transparent
+        };
+
         function toggleBanner() {
-            window.onload = function() {
-            document.getElementById("mainNav").style.width = '0';
-            };
             var nav = document.getElementById("mainNav");
             if (nav.style.width === '250px') {
                 nav.style.width = '0'; // Hide the banner by setting width to 0
+                nav.style.opacity = '0'; // Make the banner transparent when closed
             } else {
                 nav.style.width = '250px'; // Show the banner by setting width to 250px
+                nav.style.opacity = '1'; // Make the banner opaque when open
             }
         }
     </script>
 </body>
 </html>
-
 
 
 

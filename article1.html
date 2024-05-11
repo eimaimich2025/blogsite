@@ -3,20 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Undersea Tech Talk - AI in Healthcare</title>
+    <title>AI in Healthcare - Undersea Tech Talk</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <div class="hamburger" onclick="toggleBanner()">☰</div>
-        Undersea Tech Talk - AI in Healthcare
+        <a href="index.html" class="home-logo">Eric</a>
+        Undersea Tech Talk
     </header>
-    <nav class="side-banner" id="mainNav">
-        <a href="javascript:void(0)" class="close-btn" onclick="toggleBanner()">&times;</a> <!-- Close Button -->
-        <a href="index.html">Home</a>
-        <a href="second_page.html">Payment</a>
-        <a href="article1.html">AI in Healthcare</a>
-        <a href="tictactoe.html">Tic Tac Toe</a>
+    <nav>
+        <div class="side-banner" id="mySideBanner">
+            <a href="javascript:void(0)" class="close-btn" onclick="closeBanner()">&times;</a>
+            <a href="#home">Home</a>
+            <a href="article1.html">AI in Healthcare</a>
+            <a href="second_page.html">Payment</a>
+            <a href="tictactoe.html">Games</a>
+        </div>
     </nav>
     <main>
         <article>
@@ -28,25 +31,20 @@
         © 2024 Undersea Tech Talk. All rights reserved.
     </footer>
     <script>
-        window.onload = function() {
-            var nav = document.getElementById("mainNav");
-            nav.style.width = '0'; // Ensure it starts closed
-            nav.style.opacity = '0'; // Ensure it starts transparent
-        };
-
-        function toggleBanner() {
-            var nav = document.getElementById("mainNav");
-            if (nav.style.width === '250px') {
-                nav.style.width = '0'; // Hide the banner by setting width to 0
-                nav.style.opacity = '0'; // Make the banner transparent when closed
-            } else {
-                nav.style.width = '250px'; // Show the banner by setting width to 250px
-                nav.style.opacity = '1'; // Make the banner opaque when open
-            }
+    function toggleBanner() {
+        var banner = document.getElementById("mySideBanner");
+        if (banner.style.width === '250px') {
+            banner.style.width = '0';
+        } else {
+            banner.style.width = '250px';
         }
+    }
+
+    function closeBanner() {
+        document.getElementById("mySideBanner").style.width = '0';
+    }
     </script>
 </body>
 </html>
-
 
 

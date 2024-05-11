@@ -82,7 +82,7 @@ footer {
         padding: 1rem;
     }
     .hamburger {
-        top: 15px; /* Adjust position to better fit within the mobile header */
+        top: 10px; /* Adjust position to better fit within the mobile header */
     }
 }
 

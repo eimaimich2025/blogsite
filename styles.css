@@ -60,6 +60,12 @@ footer {
         font-size: 22px;
         line-height: 1.6;
     }
+    header {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #fff;
+    position: relative;
+}
 }
 
 @media (max-width: 767px) {

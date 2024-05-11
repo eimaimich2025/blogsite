@@ -79,6 +79,9 @@ footer {
     header, nav, footer {
         padding: 1rem;
     }
+    .hamburger {
+        top: 5px; /* Consistent raised position on mobile */
+    }
 }
 
 /* Side Banner Styles */

@@ -95,6 +95,8 @@ footer {
     background-color: #111;
     overflow-x: hidden;
     transition: 0.5s;
+    overflow: hidden;
+    overflow-y: hidden;
 }
 
 .side-banner a {

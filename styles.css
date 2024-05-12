@@ -8,21 +8,11 @@ body {
     background-color: #f0faff;
 }
 
-.hidden {
-    display: none !important;  /* Use !important to ensure override */
-}
-
 header {
     text-align: center;
     padding: 1rem;
     background-color: #fff;
     position: relative;
-}
-
-nav a {
-    margin: 10px;
-    text-decoration: none;
-    color: #333;
 }
 
 .hamburger {
@@ -35,6 +25,12 @@ nav a {
     color: #000;
 }
 
+nav a {
+    margin: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
 footer {
     font-size: 0.8em;
     color: #666;
@@ -44,6 +40,37 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
+}
+
+/* Side Banner Styles */
+.side-banner {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.side-banner a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.close-btn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
 }
 
 /* Media Queries */
@@ -80,43 +107,8 @@ footer {
         padding: 1rem;
     }
     .hamburger {
-        top: 5px; /* Consistent raised position on mobile */
+        top: 5px; /* Adjusted for mobile */
     }
-}
-
-/* Side Banner Styles */
-.side-banner {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1000;
-    top: 0;
-    right: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    overflow: hidden;
-    overflow-y: hidden;
-    opacity: 0; /* Start as closed and transparent */
-    width: 0; /* Start as closed */
-    /* Other styles for positioning, background, etc. */
-}
-
-.side-banner a {
-    padding: 10px 15px;
-    text-decoration: none;
-    font-size: 25px;
-    color: white;
-    display: block;
-    transition: 0.3s;
-}
-
-.close-btn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
 }
 
 

@@ -35,13 +35,17 @@
         var banner = document.getElementById("mySideBanner");
         if (banner.style.width === '250px') {
             banner.style.width = '0';
+            banner.style.opacity = '0'; // Hide banner
         } else {
             banner.style.width = '250px';
+            banner.style.opacity = '1'; // Show banner
         }
     }
 
     function closeBanner() {
-        document.getElementById("mySideBanner").style.width = '0';
+        var banner = document.getElementById("mySideBanner");
+        banner.style.width = '0';
+        banner.style.opacity = '0'; // Ensure closing also hides the banner
     }
     </script>
 </body>
